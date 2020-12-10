@@ -18,7 +18,7 @@ func image(v sendImage) string {
 
 	msg := whatsapp.ImageMessage{
 		Info: whatsapp.MessageInfo{
-			RemoteJid: "91" + v.Receiver + "@s.whatsapp.net",
+			RemoteJid: v.Receiver + "@s.whatsapp.net",
 		},
 		Type:    "image/jpeg",
 		Caption: v.Message,
