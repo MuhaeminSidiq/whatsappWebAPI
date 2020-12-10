@@ -7,7 +7,7 @@ import (
 )
 
 func sendBulk(file string) string {
-	csvFile, err := os.Open(dir + file)
+	csvFile, err := os.Open(dir + "/files/" + file)
 	if err != nil {
 		panic(err)
 	}
@@ -36,7 +36,7 @@ func sendBulk(file string) string {
 }
 
 func sendBulkImg(file string) string {
-	csvFile, err := os.Open(dir + file)
+	csvFile, err := os.Open(dir + "/files/" + file)
 	if err != nil {
 		panic(err)
 	}
@@ -56,7 +56,7 @@ func sendBulkImg(file string) string {
 			v := sendImage{
 				Receiver: each[0],
 				Message:  each[1],
-				Image:    each[2],
+				Image:    "/files/" + each[2],
 			}
 			imageChannel <- v
 		}
