@@ -8,7 +8,7 @@
 [![Sourcegraph](https://sourcegraph.com/github.com/Piyushhbhutoria/whatsappWebAPI/-/badge.svg)](https://sourcegraph.com/github.com/Piyushhbhutoria/whatsappWebAPI?badge)
 
 This project is made with the help of [Rhymen/go-whatsapp - WhatsApp Web API](https://github.com/Rhymen/go-whatsapp).
-Works only for numbers in India for now.
+
 
 ## Setup
 
@@ -39,9 +39,9 @@ go build .
 Press the following number to send message on whatsapp  
 Test --> 0  
 Send Text --> 1  
-Send Image --> 2  
-Send bulk text --> 3  
-Send bulk image --> 4  
+Send Image --> 2  --> enter image filename
+Send bulk text --> 3  --> enter csv filename without file extension
+Send bulk image --> 4    --> enter csv filename without file extension
 Exit --> 5
 
 Demo bulk file examples stored in [files](/files) folder
