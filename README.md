@@ -39,9 +39,9 @@ go build .
 Press the following number to send message on whatsapp  
 Test --> 0  
 Send Text --> 1  
-Send Image --> 2  --> enter image filename
-Send bulk text --> 3  --> enter csv filename without file extension
-Send bulk image --> 4    --> enter csv filename without file extension
+Send Image --> 2  --> enter image filename  
+Send bulk text --> 3  --> enter csv filename without file extension  
+Send bulk image --> 4    --> enter csv filename without file extension  
 Exit --> 5
 
 Demo bulk file examples stored in [files](/files) folder
