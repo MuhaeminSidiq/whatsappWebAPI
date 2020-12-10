@@ -9,7 +9,7 @@ import (
 func texting(v sendText) string {
 	msg := whatsapp.TextMessage{
 		Info: whatsapp.MessageInfo{
-			RemoteJid: "91" + v.Receiver + "@s.whatsapp.net",
+			RemoteJid: v.Receiver + "@s.whatsapp.net",
 		},
 		Text: v.Message,
 	}
