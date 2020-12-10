@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"runtime"
-	"strconv"
+	//"runtime"
+	//"strconv"
 	"time"
 
 	"github.com/Rhymen/go-whatsapp"
@@ -14,15 +14,15 @@ import (
 
 var (
 	wac, _       = whatsapp.NewConn(20 * time.Second)
-	dir, _       = filepath.Abs(filepath.Dir(os.Args[0]))
+	dir, _       = (filepath.Abs(filepath.Dir(os.Args[0]))) + "/files/"
 	textChannel  chan sendText
 	imageChannel chan sendImage
 )
 
 func init() {
-	runtime.GOMAXPROCS(runtime.NumCPU())
+	//runtime.GOMAXPROCS(runtime.NumCPU())
 
-	fmt.Println("running on " + strconv.Itoa(runtime.NumCPU()) + " cores.")
+	//fmt.Println("running on " + strconv.Itoa(runtime.NumCPU()) + " cores.")
 
 	textChannel = make(chan sendText)
 	imageChannel = make(chan sendImage)
